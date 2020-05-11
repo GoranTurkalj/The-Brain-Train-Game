@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Brain Train Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div id="game-container">
+      <!--GAME TITLE AND INTRO-->
+      <div class="title-container">
+        <span>B</span>
+        <span>R</span>
+        <span>A</span>
+        <span>I</span>
+        <span>N</span>
+        <div id="logo"></div>
+        <span>T</span>
+        <span>R</span>
+        <span>A</span>
+        <span>I</span>
+        <span>N</span>
+      </div>
+      <!--GAMEPLAY CONTAINER-->
+      <div class="gameplay-container">
+        <!--CHOOSE GAME CONTAINER-->
+        <div class="choice-container">
+          <div class="choice choice--easy">
+            <p class="description">Goldfish Level</p>
+            <p class="info">Game Board has 16 squares!</p>
+            <button id="easy-btn">EASY</button>
+          </div>
+          <div class="choice choice--normal">
+            <p class="description">Memory of an elephant!</p>
+            <p class="info">Game Board has 20 squares!</p>
+            <button id="normal-btn">NORMAL</button>
+          </div>
+          <div class="choice choice--hard">
+            <p class="description">Memory of a dolphin!</p>
+            <p class="info">Game Board has 24 squares!</p>
+            <button id="hard-btn">HARD</button>
+          </div>
+          <div class="choice choice--score">
+            <p class="description">Your Best Scores</p>
+            <button id="score-btn">HIGHSCORE</button>
+          </div>
+        </div>
+        <!--GAME BOARDR-->
+        <div class="board-container">
+          <div class="gameplay-info">
+            <span>MOVES:</span> <span>TIMER: </span>
+          </div>
+          <div class="gameBoard"></div>
+          <button class="restart">RESTART</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
