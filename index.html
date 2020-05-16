@@ -13,55 +13,66 @@
       href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
       rel="stylesheet"
     />
+    <!--Prevents favicon error-->
+    <link rel="shortcut icon" href="#" />
     <script src="app.js" defer></script>
   </head>
   <body>
     <div id="game-container">
       <!--GAME TITLE AND INTRO-->
       <div class="title-container">
-        <span>B</span>
-        <span>R</span>
-        <span>A</span>
-        <span>I</span>
-        <span>N</span>
+        <div class="move-counter">
+          <p class="moves">000</p>
+        </div>
+        <div class="word word--first">
+          <span>B</span>
+          <span>R</span>
+          <span>A</span>
+          <span>I</span>
+          <span>N</span>
+        </div>
         <div id="logo"></div>
-        <span>T</span>
-        <span>R</span>
-        <span>A</span>
-        <span>I</span>
-        <span>N</span>
+        <div class="word word--second">
+          <span>T</span>
+          <span>R</span>
+          <span>A</span>
+          <span>I</span>
+          <span>N</span>
+        </div>
+        <div class="timerContainer"><p class="timer">00:00</p></div>
       </div>
       <!--GAMEPLAY CONTAINER-->
       <div class="gameplay-container">
         <!--CHOOSE GAME CONTAINER-->
-        <div class="choice-container">
-          <div class="choice choice--easy">
-            <p class="description">Goldfish Level</p>
-            <p class="info">Game Board has 16 squares!</p>
-            <button id="easy-btn">EASY</button>
-          </div>
-          <div class="choice choice--normal">
-            <p class="description">Memory of an elephant!</p>
-            <p class="info">Game Board has 20 squares!</p>
-            <button id="normal-btn">NORMAL</button>
-          </div>
-          <div class="choice choice--hard">
-            <p class="description">Memory of a dolphin!</p>
-            <p class="info">Game Board has 24 squares!</p>
-            <button id="hard-btn">HARD</button>
-          </div>
-          <div class="choice choice--score">
-            <p class="description">Your Best Scores</p>
-            <button id="score-btn">HIGHSCORE</button>
+        <div class="box-container">
+          <div class="box box--front"></div>
+          <div class="box box--top"></div>
+          <div class="box box--back"></div>
+          <div class="box box--bottom"></div>
+          <div class="box box--right"></div>
+          <div id="game-menu" class="box box--left">
+            <button id="easy-btn">
+              EASY
+            </button>
+            <button id="normal-btn">
+              NORMAL
+            </button>
+            <button id="hard-btn">
+              HARD
+            </button>
+            <button id="score-btn">SCORE</button>
           </div>
         </div>
-        <!--GAME BOARDR-->
+        <!--GAME BOARD-->
         <div class="board-container">
-          <div class="gameplay-info">
-            <span>MOVES:</span> <span>TIMER: </span>
-          </div>
           <div class="gameBoard"></div>
-          <button class="restart">RESTART</button>
+          <div class="controls-container">
+            <button id="reset-btn">RESET</button>
+            <button id="menu-btn">MENU</button>
+          </div>
+          <div class="message-container">
+            <p class="message">Elephants never forget!</p>
+          </div>
         </div>
       </div>
     </div>
