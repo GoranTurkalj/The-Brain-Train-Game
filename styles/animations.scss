@@ -1,0 +1,118 @@
+// ANIMATIONS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+//Animation for Game Logo
+@keyframes animateLogo {
+  0% {
+  }
+
+  50% {
+    opacity: 100%;
+  }
+
+  100% {
+    top: 0%;
+    opacity: 100%;
+    transform: scale(1);
+  }
+}
+
+//Animation for the title letters
+@keyframes animateSpan {
+  0% {
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+//Animation for the title letters when they change into "moves and "timer" during gameplay.
+@keyframes animateSpanChange {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+//Animation for title container during game intro.
+@keyframes animateTitleContainer {
+  0% {
+  }
+
+  50% {
+    background-color: white;
+    color: black;
+  }
+
+  100% {
+    background-color: white;
+    color: black;
+  }
+}
+
+@keyframes animateBox {
+  0% {
+    // transform: scale(0) rotateX(-90deg) rotateY(0deg);
+    transform: scale(0) rotateX(90deg) rotateY(0deg);
+  }
+
+  50% {
+    transform: scale(1) rotateX(90deg) rotateY(315deg);
+  }
+  100% {
+    transform: rotateX(-15deg) rotateY(45deg);
+  }
+}
+
+@keyframes animateBoxReversed {
+  0% {
+    // transform: scale(0) rotateX(-90deg) rotateY(0deg);
+    transform: scale(0) rotateX(90deg) rotateY(0deg);
+  }
+
+  50% {
+    transform: scale(1) rotateX(90deg) rotateY(315deg);
+  }
+  100% {
+    transform: rotateX(-15deg) rotateY(45deg);
+  }
+}
+
+@keyframes animateBoardContainer {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes animateBoardContainerReverse {
+  0% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes animateMessage {
+  0% {
+    opacity: 0%;
+  }
+
+  25% {
+    opacity: 100%;
+  }
+
+  75% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}

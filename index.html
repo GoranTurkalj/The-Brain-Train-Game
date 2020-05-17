@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Brain Train Game</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <!--Prevents favicon error-->
+    <link rel="shortcut icon" href="#" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div id="game-container">
+      <!--GAME TITLE AND INTRO-->
+      <div class="title-container">
+        <div class="move-counter">
+          <p class="moves">000</p>
+        </div>
+        <div class="word word--first">
+          <span>B</span>
+          <span>R</span>
+          <span>A</span>
+          <span>I</span>
+          <span>N</span>
+        </div>
+        <div id="logo"></div>
+        <div class="word word--second">
+          <span>T</span>
+          <span>R</span>
+          <span>A</span>
+          <span>I</span>
+          <span>N</span>
+        </div>
+        <div class="timerContainer"><p class="timer">00:00</p></div>
+      </div>
+      <!--GAMEPLAY CONTAINER-->
+      <div class="gameplay-container">
+        <!--CHOOSE GAME CONTAINER-->
+        <div class="box-container">
+          <div class="box box--front"></div>
+          <div class="box box--top"></div>
+          <div class="box box--back"></div>
+          <div class="box box--bottom"></div>
+          <div class="box box--right"></div>
+          <div id="game-menu" class="box box--left">
+            <button id="easy-btn">
+              EASY
+            </button>
+            <button id="normal-btn">
+              NORMAL
+            </button>
+            <button id="hard-btn">
+              HARD
+            </button>
+            <button id="score-btn">SCORE</button>
+          </div>
+        </div>
+        <!-- BOARD CONTAINER-->
+        <div class="board-container">
+          <div class="gameBoard"></div>
+          <div class="controls-container">
+            <button id="reset-btn">RESET</button>
+            <button id="menu-btn">MENU</button>
+          </div>
+        </div>
+        <!-- SCORE CONTAINER-->
+        <div class="score-container">
+          <ul class="score-list">
+            <li id="easy">You haven't played on EASY.</li>
+            <li id="normal">
+              You haven't played on NORMAL.
+            </li>
+            <li id="hard">You haven't played on HARD.</li>
+          </ul>
+          <button id="return-btn">RETURN</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
