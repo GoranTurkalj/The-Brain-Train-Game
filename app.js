@@ -43,8 +43,8 @@ let gameScore = {
 function Square(id, pairID) {
   this.id = id;
   this.pairID = pairID;
-  this.realBackground = `url("/images/img${this.pairID}.png")`; // This is real background determined by pairID
-  this.defaultBackground = `url("/images/cover2.png")`;
+  this.realBackground = `url("./images/img${this.pairID}.png")`; // This is real background determined by pairID
+  this.defaultBackground = `url("./images/cover2.png")`;
   this.el = null;
 
   this.render = function () {
