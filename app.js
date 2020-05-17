@@ -513,6 +513,7 @@ function retrieveGameScore() {
 // Click handler for Score button
 scoreBtn.addEventListener("click", displayScore);
 function displayScore() {
+  disableClicking(1500);
   hideMenu();
 
   //Delay appending score so the hideMenu animation plays out.
