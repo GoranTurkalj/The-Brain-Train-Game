@@ -366,7 +366,7 @@ body {
 
 #logo {
   opacity: 0%;
-  background-image: url("/images/logo15.png");
+  background-image: url("./images/logo15.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -383,7 +383,7 @@ body {
 
 #logo::after {
   content: "";
-  background-image: url("/images/logo1.png");
+  background-image: url("./images/logo1.png");
   background-size: 80%;
   background-position-x: 65%;
   background-position-y: -50%;

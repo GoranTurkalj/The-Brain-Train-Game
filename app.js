@@ -217,7 +217,7 @@ function checkMatch(square1, square2) {
 
   //If it is a match - elements get greyed out via .matched()
   if (square1.pairID === square2.pairID) {
-    new Audio("/sounds/matched.mp3").play();
+    new Audio("./sounds/matched.mp3").play();
     console.log("it's a match");
     square1.matched();
     square2.matched();
@@ -329,7 +329,7 @@ function gameWon(pairs, moves) {
 
   //After game is over, squares lose borders and gain back color.
   setTimeout(() => {
-    new Audio("/sounds/win1.mp3").play();
+    new Audio("./sounds/win1.mp3").play();
     for (const square of squaresArray) {
       square.revealed();
     }
